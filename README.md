@@ -25,6 +25,19 @@ curl -L https://github.com/docker/machine/releases/download/v0.4.0/docker-machin
 chmod +x /usr/local/bin/docker-machine
 ```
 
+create a driver
+```
+docker-machine create --driver virtualbox <name>
+```
+using ec2
+```
+docker-machine create --driver amazonec2 --amazonec2-access-key <aws_access_key> --amazonec2-secret-key <aws_secret_key> --amazonec2-vpc-id <vpc_id> --amazonec2-subnet-id <subnet_id> --amazonec2-zone <zone> <name>
+```
+
+
+
+
+
 - cp8
 install swarm
 ```
